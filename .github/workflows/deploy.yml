@@ -3,7 +3,7 @@ name: Deploy to Netlify
 on:
   push:
     branches:
-      - master 
+      - master
 
 jobs:
   deploy:
@@ -16,13 +16,13 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '20.15.0'
+        node-version: '20.15.0'  
 
     - name: Install dependencies
-      run: npm install  # O el comando correspondiente si usas otro gestor de paquetes
+      run: npm install
 
     - name: Build the project
-      run: npm run build  # O el comando correspondiente para construir tu proyecto
+      run: npm run build  
 
     - name: Deploy to Netlify
       env:
