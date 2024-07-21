@@ -8,13 +8,21 @@ import { studies } from "../../../const/const";
     <h3 class="title-studies" id="studies">Estudios</h3>
     <ul class="ul-studies">
       {
-        studies.map(({ date, title, corporation }) => (
+        studies.map(({ date, title, corporation, url }) => (
           <li class="li-studies">
             <span class="circle" />
             <div>
               <h3>{title}</h3>
               <p>{corporation}</p>
               <span>{date}</span>
+              <br />
+              {url && (
+                <span>
+                  <a href={url} class="custom-link" target="_blank">
+                    Mostrar Certificación
+                  </a>
+                </span>
+              )}
             </div>
           </li>
         ))
@@ -41,7 +49,7 @@ import { studies } from "../../../const/const";
     height: 100%;
     /* background: radial-gradient(at left center, rgba(1, 190, 150 , 0.5), transparent , transparent); */
     background: linear-gradient(to top, rgba(1, 190, 150, 0.5), #000);
-    background: ;
+    background:;
     z-index: 0;
   }
   .content_studies {
@@ -94,4 +102,12 @@ import { studies } from "../../../const/const";
   .li-studies span {
     font-size: 13px;
   }
+  .custom-link {
+    color: #ffffff; /* Color blanco */
+    font-style: italic; /* Texto en cursiva */
+    text-decoration: none; /* Opcional: eliminar subrayado */
+  }
+  .custom-link:hover {
+  text-decoration: underline; /* Subrayado al pasar el mouse */
+}
 </style>

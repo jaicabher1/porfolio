@@ -4,20 +4,17 @@
     <div class="container-footer">
       <h2 class="title-contact" id="contacto">Contacto</h2>
       <div class="container-redes">
-                <a href="https://github.com/jaicabher1" target="_blank">
+        <a href="https://github.com/jaicabher1" target="_blank">
           <li class="li-contact">
             <i class="fa-brands fa-github"></i>
-            <p>Github</p>
+            <p class = "large-text">Github</p>
           </li>
         </a>
 
-        <a
-          href="https://www.linkedin.com/in/jcaballeroh/"
-          target="_blank"
-        >
+        <a href="https://www.linkedin.com/in/jcaballeroh/" target="_blank">
           <li class="li-contact">
             <i class="fa-brands fa-linkedin"></i>
-            <p>LinkedIn</p>
+            <p class = "large-text">LinkedIn</p>
           </li>
         </a>
       </div>
@@ -57,9 +54,9 @@
   .container-redes {
     position: relative;
     display: flex;
-    gap: 30px;
-    justify-content: space-between;
-    padding: 30px 0;
+    gap: 50px;
+    justify-content: space-evenly;
+    padding: 50px 0;
     flex-wrap: wrap;
   }
 
@@ -75,7 +72,7 @@
     transition: color 0.2s ease-in-out;
   }
   .li-contact i {
-    font-size: 30px;
+    font-size: 60px;
   }
 
   .li-contact:hover {
@@ -90,4 +87,11 @@
     width: 100%;
     padding: 10px 0;
   }
+  .large-text {
+    font-size: 24px; /* Cambia este valor según el tamaño deseado */
+    font-weight: bold; /* Opcional: para hacer el texto en negrita */
+  }
+  .large-text:hover {
+  text-decoration: underline; /* Subrayado al pasar el mouse */
+}
 </style>

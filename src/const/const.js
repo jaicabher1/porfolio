@@ -49,6 +49,7 @@ export const IconKeys = {
   vuejs: "vuejs",
   springBoot: "springBoot",
   django: "django",
+  python: "python",
 };
 
 export const skills = [
@@ -108,6 +109,10 @@ export const skills = [
     title: "Django",
     icon: IconKeys.django,
   },
+  {
+    title: "Python",
+    icon: IconKeys.python,
+  },
 ];
 
 export const projects = [
@@ -128,6 +133,23 @@ export const projects = [
       },
       {
         icon: IconKeys.css,
+      },
+    ],
+  },
+  {
+    img: "../../../img/banquetBuddy.webp",
+    title: "Banquet Buddy",
+    link: "https://banquetbuddyppl.pythonanywhere.com/",
+    description: `Trabajo en equipo con Django, una página web para la gestión de eventos. Asignatura de Ingeniería del Software (ISPP).`,
+    technologies: [
+      {
+        icon: IconKeys.django,
+      },
+      {
+        icon: IconKeys.python,
+      },
+      {
+        icon: IconKeys.html,
       },
     ],
   },
