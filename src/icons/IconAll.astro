@@ -19,7 +19,7 @@ import IconVite from "./IconVite.astro";
 import IconVue from "./IconVue.astro";
 import IconSpring from "./IconSpring.astro";
 
-export const ICONS = {
+export const ICONS: Record<string, (_props: Record<string, any>) => any> = {
   html: IconHtml,
   css: IconCss,
   javaScript: IconJavaScript,

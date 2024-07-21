@@ -81,11 +81,11 @@ import photoperfil from "../../../../public/img/photo-perfil.webp";
   const letters = document.querySelectorAll(".p-profesion");
   letters.forEach((letter) => {
     letter.addEventListener("mouseenter", () => {
-      toogle(letter);
+      toogle(letter as HTMLElement);
     });
   });
 
-  function toogle(letter) {
+  function toogle(letter: HTMLElement) {
     letter.classList.add("bouncing");
     letter.addEventListener("animationend", () => {
       letter.classList.remove("bouncing");

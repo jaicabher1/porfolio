@@ -5,6 +5,8 @@ type Technology = {
   icon?: string;
 };
 
+const { technologies, title, img, description, link } = Astro.props;
+
 export interface Props {
   title: string;
   img: string;
@@ -12,8 +14,6 @@ export interface Props {
   technologies?: Technology[];
   link: string;
 }
-
-const { technologies, title, img, description, link } = Astro.props;
 ---
 
 <li class="li-project">
@@ -25,9 +25,13 @@ const { technologies, title, img, description, link } = Astro.props;
   <p class="title-technologies">tecnologías usadas</p>
   <div class="container-technologies">
     {
-      technologies.map(({ icon }) => {
-        const IconComponent = getIconComponent(icon);
-        return <i>{IconComponent && <IconComponent />}</i>;
+      technologies?.map(({ icon }) => {
+        if (icon !== undefined) {
+          const IconComponent = getIconComponent(icon);
+          return <i>{IconComponent && <IconComponent />}</i>;
+        } else {
+          console.warn("Icon is undefined");
+        }
       })
     }
   </div>
