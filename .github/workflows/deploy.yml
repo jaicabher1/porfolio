@@ -16,7 +16,7 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '14'  # Ajusta la versión de Node.js según tus necesidades
+        node-version: '20.15.0'
 
     - name: Install dependencies
       run: npm install  # O el comando correspondiente si usas otro gestor de paquetes
