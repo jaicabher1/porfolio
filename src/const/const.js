@@ -50,6 +50,7 @@ export const IconKeys = {
   springBoot: "springBoot",
   django: "django",
   python: "python",
+  tailwindCss: "tailwindCss",
 };
 
 export const skills = [
@@ -113,6 +114,10 @@ export const skills = [
     title: "Python",
     icon: IconKeys.python,
   },
+  {
+    title: "Tailwind CSS",
+    icon: IconKeys.tailwindCss,
+  }
 ];
 
 export const projects = [
