@@ -158,4 +158,24 @@ export const projects = [
       },
     ],
   },
+  {
+    img: "../../../img/adminPatients.webp",
+    title: "Administrador de Pacientes",
+    link: "https://moonlit-crumble-cbb164.netlify.app/",
+    description: `Segundo proyecto con Vue.js, una página web de administración de pacientes con el fin del manejo de formulario en este framework.`,
+    technologies: [
+      {
+        icon: IconKeys.vuejs,
+      },
+      {
+        icon: IconKeys.javaScript,
+      },
+      {
+        icon: IconKeys.html,
+      },
+      {
+        icon: IconKeys.tailwindCss,
+      },
+    ],
+  },
 ];
